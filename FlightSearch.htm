@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Search for Flights</h2>
+        <form id="flight-search-form">
+            <label>Trip Type:</label>
+            <select id="trip-type" class="form-select" onchange="toggleTripType()">
+                <option value="one-way">One-Way</option>
+                <option value="round-trip">Round-Trip</option>
+                <option value="multi-city">Multi-City</option>
+            </select>
+
+            <div class="form-group mt-3">
+                <label>Departure:</label>
+                <input type="text" class="form-control" placeholder="Departure City">
+            </div>
+            <div class="form-group mt-3">
+                <label>Destination:</label>
+                <input type="text" class="form-control" placeholder="Destination City">
+            </div>
+            <div class="form-group mt-3">
+                <label>Date:</label>
+                <input type="date" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Search</button>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-primary" href="Home.html">Back</a>
+        </div>
+        </form>
+    
+    <script>
+        function toggleTripType() {
+    const tripType = document.getElementById("trip-type").value;
+    // Toggle visibility of return date or multi-city options
+}
+
+    </script>
+
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Social media icons or other content can go here if needed -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          
+          <!-- Grid column: About -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-2"></i><b>C<sub>G</sub> Airlines</b>
+            </h6>
+            <p>
+              CG Airlines: Experience seamless travel with CG Airlines, where comfort meets convenience.
+              Offering a range of domestic and international flights, we prioritize punctuality, safety, and exceptional service to ensure a smooth journey from takeoff to landing.
+              Whether you’re traveling for business or leisure, CG Airlines is committed to making your trip memorable.
+            </p>
+          </div>
+          <!-- Grid column: About -->
+  
+          <!-- Grid column: Connect with Us -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Connect With Us!</h6>
+            <p><a href="https://www.linkedin.com/feed/" class="text-reset">LinkedIn</a></p>
+            <p><a href="https://www.facebook.com/" class="text-reset">Facebook</a></p>
+            <p><a href="https://github.com/Chinmay0010/CDAC" class="text-reset">Github</a></p>
+          </div>
+          <!-- Grid column: Connect with Us -->
+  
+          <!-- Grid column: Contact -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-2"></i> Mumbai, MUM 400104, IND</p>
+            <p><i class="fas fa-envelope me-2"></i> chinmay@gmail.com</p>
+            <p><i class="fas fa-phone me-2"></i> +91 9137416237</p>
+          </div>
+          <!-- Grid column: Contact -->
+          
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">C<sub>G</sub>airlines.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+</html>

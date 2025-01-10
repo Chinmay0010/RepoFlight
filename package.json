@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mysql": "^2.18.1"
+  },
+  "name": "flight_booking",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon node index.js"
+  },
+  "author": "chinmay",
+  "license": "ISC",
+  "description": ""
+}

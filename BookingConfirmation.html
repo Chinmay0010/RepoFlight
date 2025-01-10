@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking And Confirmation</title>
+
+  <!-- <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <style>
+    body {
+      background-color: azure;
+    }
+
+    .addcourse {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .container label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-action-buttons input[type="submit"] {
+      width: 100%;
+      max-width: 150px;
+      margin-top: 10px;
+    }
+
+    .table thead th {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="addcourse">
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" class="p-4">
+      <div class="container mb-5 p-4" style="background-color: antiquewhite;">
+        <h1 class="text-center">Book Your Flight Here!</h1>
+      </div>
+      <div class="container mb-3">
+        <label for="flight" class="form-label">Your Full Name:</label><label class="validation-error hide"
+          id="FlightValidationError">This field is required.</label>
+        <input type="text" name="fullname" id="fullname" class="form-control" required>
+      </div>
+      <div class="container mb-3">
+        <label for="duration" class="form-label">Flight Name :</label>
+        <input type="text" name="flight" id="flight" class="form-control" required>
+      </div>
+      <div class="container mb-3">
+        <label for="price" class="form-label">Price :</label>
+        <input type="text" pattern="" name="price" id="price" class="form-control" required>
+      </div>
+      <div class="container mb-3">
+        <label for="validation" class="form-label">Your Boarding City :</label>
+        <input type="text" name="boardingcity" id="boradingcity" class="form-control" required>
+      </div>
+      <div class="container mb-3">
+        <label for="validation" class="form-label">Your Destination City :</label>
+        <input type="text" name="destinationcity" id="destinationcity" class="form-control" required>
+      </div>
+      <div class="container mb-3">
+        <label for="validation" class="form-label">Seat</label>
+        <input type="text" name="seat" id="seat" class="form-control" required>
+      </div>
+      <div class="container text-center mt-4">
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </div>
+    </form>
+  </div>
+
+  <br />
+  <div class="course-table container">
+    <table class="table table-striped" id="Flightlist">
+      <thead class="table-dark">
+        <tr>
+          <th>Full Name</th>
+          <th>Flight Name</th>
+          <th>Price</th>
+          <th>boradingcity</th>
+          <th>destinationcity</th>
+          <th>seat</th>
+          <th>action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+        
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script src="main.js">
+  </script>
+
+
+
+</body>
+
+</html>
